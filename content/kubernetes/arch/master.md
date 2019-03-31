@@ -5,7 +5,7 @@ weight = 201
 
 +++
 
-![Master](/intro-k8/images/arch//master.png)
+![Master](/louk8cnc-intro-k8s/images/arch//master.png)
 
 * API data store: Etcd (Cluster State)
 

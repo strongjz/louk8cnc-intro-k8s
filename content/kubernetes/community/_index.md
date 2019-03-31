@@ -7,4 +7,4 @@ chapter = true
 
 # CNCF Landscape
 
-![](/intro-k8/images/cncf-landscape.png)
+![](/louk8cnc-intro-k8s/images/cncf-landscape.png)

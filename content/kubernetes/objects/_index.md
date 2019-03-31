@@ -7,13 +7,13 @@ chapter = true
 
 # Kubernetes API Objects
 
-1. [Namespaces](/intro-k8/kubernetes/objects/namespaces)
-2. [Pods](/intro-k8/kubernetes/objects/pods)
-3. [Resource Quotas](/intro-k8/kubernetes/objects/resource-quotas)
-4. [Controllers](/intro-k8/kubernetes/objects/controllers)
-5. [Storage](/intro-k8/kubernetes/objects/storage)
-6. [Secrets](/intro-k8/kubernetes/objects/secrets)
-7. [ConfigMaps](/intro-k8/kubernetes/objects/configmaps)
-8. [Ingress](/intro-k8/kubernetes/objects/ingress)
-9. [Service](/intro-k8/kubernetes/objects/services)
-10. [Healthchecks](/intro-k8/kubernetes/objects/healthchecks)
+1. [Namespaces](/louk8cnc-intro-k8s/kubernetes/objects/namespaces)
+2. [Pods](/louk8cnc-intro-k8s/kubernetes/objects/pods)
+3. [Resource Quotas](/louk8cnc-intro-k8s/kubernetes/objects/resource-quotas)
+4. [Controllers](/louk8cnc-intro-k8s/kubernetes/objects/controllers)
+5. [Storage](/louk8cnc-intro-k8s/kubernetes/objects/storage)
+6. [Secrets](/louk8cnc-intro-k8s/kubernetes/objects/secrets)
+7. [ConfigMaps](/louk8cnc-intro-k8s/kubernetes/objects/configmaps)
+8. [Ingress](/louk8cnc-intro-k8s/kubernetes/objects/ingress)
+9. [Service](/louk8cnc-intro-k8s/kubernetes/objects/services)
+10. [Healthchecks](/louk8cnc-intro-k8s/kubernetes/objects/healthchecks)

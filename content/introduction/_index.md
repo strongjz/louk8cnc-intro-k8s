@@ -5,7 +5,7 @@ weight = 5
 pre = "<b>1. </b>"
 +++
 
-1. [Instructors](/intro-k8/introduction/whoami/)
-2. [Contino](/intro-k8/introduction/contino/)
-3. [Agenda](/intro-k8/introduction/agenda/)
+1. [Instructors](/louk8cnc-intro-k8s/introduction/whoami/)
+2. [Contino](/louk8cnc-intro-k8s/introduction/contino/)
+3. [Agenda](/louk8cnc-intro-k8s/introduction/agenda/)
 

@@ -7,7 +7,7 @@ chapter = true
 
 James Strong  
 
-![](/intro-k8/images/james.png)
+![](/louk8cnc-intro-k8s/images/james.png)
 
 Technical Principal @ [Contino](https://contino.io)
 

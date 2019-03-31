@@ -7,4 +7,4 @@ chapter = true
 
 # In the beginning 
 
-![](/intro-k8/images/docker/app2.png)
+![](/louk8cnc-intro-k8s/images/docker/app2.png)
