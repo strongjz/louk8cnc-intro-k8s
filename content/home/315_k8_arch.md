@@ -15,10 +15,6 @@ weight = 315
 
 ---
 
-![Master](/images/arch//master.png)
-
----
-
 ### Master Node 
 
 * API data store: Etcd (Cluster State)
@@ -35,11 +31,11 @@ weight = 315
 
 ---
 
-### Worker Node 
+![](/louk8cnc-intro-k8s/images/arch/master.png)
 
 ---
 
-![](/louk8cnc-intro-k8s/images/arch//node.png)
+### Worker Node 
 
 ---
 
@@ -50,7 +46,6 @@ weight = 315
 
 2. Container Runtime:
   * docker
-  * containerd
 
 3. Pod:
   * Container (one or more)
@@ -59,6 +54,12 @@ weight = 315
   * Used to reach services and allow communication between Nodes.
 
 ---
+
+![](/louk8cnc-intro-k8s/images/arch//node.png)
+
+---
+
+
 
 ### Data Flow
 

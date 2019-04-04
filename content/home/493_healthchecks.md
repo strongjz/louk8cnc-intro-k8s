@@ -24,6 +24,9 @@ The distributed nature of kubernetes allows pods to come and go for a number of 
 
 Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.
 
+---
+
+## Liveliness
 
 ```yaml
 apiVersion: v1
@@ -56,7 +59,12 @@ spec:
 
 
 ## Readiness
+
 Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.
+
+---
+
+## Readiness
 
 ```yaml
 readinessProbe:

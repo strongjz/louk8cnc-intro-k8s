@@ -19,12 +19,16 @@ Services, Pods and other objects are only accessible inside the cluster
 
 ---
 
-#### Ingress controllers
+## Ingress Controllers
 
-In order for the ingress resource to work, the cluster must have an ingress controller running. This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and are typically started automatically with a cluster. Choose the ingress controller implementation that best fits your cluster.
+* In order for the ingress resource to work, the cluster must have an ingress controller running. 
+* This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and 
+are typically started automatically with a cluster. 
+* Choose the ingress controller implementation that best fits your cluster.
 
+---
 
-Ingress Controller 
+## Ingress Controller 
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -39,7 +43,7 @@ spec:
 
 ---
 
-#### Ingress controllers
+## Ingress controllers
 
 Kubernetes supported Ingress Controllers: 
 
@@ -56,7 +60,7 @@ Full list is [here](https://kubernetes.io/docs/concepts/services-networking/ingr
 
 ---
 
-#### Ingress Rules
+## Ingress Rules
 
 Each http rule contains the following information:
 
@@ -64,7 +68,9 @@ Each http rule contains the following information:
 * list of paths
 * Backend service
 
-Ingress Rule
+---
+
+## Ingress Rule
 
 ```yaml
 apiVersion: extensions/v1beta1

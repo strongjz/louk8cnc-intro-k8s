@@ -4,7 +4,7 @@ date = 2018-12-09T17:21:05-05:00
 weight = 203
 +++
 
-# [Dockerfile](https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile)
+### [Dockerfile](https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile)
 
 * Instructions specify what to do when building the image
 * FROM instruction specifies what the base image should be 
@@ -12,6 +12,11 @@ weight = 203
 * Comments start with “#”
 * Remember, each line in a Dockerfile creates a new layer if it changes the state of the image
 * You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile
+
+___
+
+### [Dockerfile](https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile)
+
 * Don’t install unnecessary packages
 * One ENTRYPOINT per Dockerfile
 * Combine similar commands into one by using “&&” and “\”  
