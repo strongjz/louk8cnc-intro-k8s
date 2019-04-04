@@ -1,11 +1,11 @@
 +++
-title = "Benefits of Docker"
+title = "Benefits of Containers"
 date = 2018-12-09T17:21:05-05:00
 weight = 201
 chapter = true
 +++
 
-# Docker Benefits
+# Containers Benefits
 
 * Separation of concerns
 * Developers focus on building their apps 
@@ -15,4 +15,3 @@ chapter = true
 * Build in one environment, ship to another
 * Scalability
 * Easily spin up new containers if needed
-* Run more apps on one host machine

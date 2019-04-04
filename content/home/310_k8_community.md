@@ -10,25 +10,27 @@ weight = 310
 
 ---
 
+# CNCF Landscape
 
 ![](/louk8cnc-intro-k8s/images/incubating.png)
  
-
 ---
+
+# CNCF Landscape
 
 ![](/louk8cnc-intro-k8s/images/graduated.png)
  
 
 ---
 
-# Involvement
+# CNCF Involvement
 
-* Sigs https://github.com/kubernetes/community/blob/master/sig-list.md 
+* [SIGS](https://github.com/kubernetes/community/blob/master/sig-list.md)
 
-* Stackoverflow https://stackoverflow.com/questions/tagged/kubernetes 
+* [Stackoverflow](https://stackoverflow.com/questions/tagged/kubernetes)
 
 * Slack 
-    * k8 http://slack.k8s.io/
-    * CNCF https://slack.cncf.io/ 
+    * [K8](http://slack.k8s.io/)
+    * [CNCF](https://slack.cncf.io/) 
 
 

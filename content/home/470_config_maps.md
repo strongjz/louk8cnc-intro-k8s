@@ -4,21 +4,26 @@ date = 2018-12-09T17:05:14-05:00
 weight = 470
 +++
 
-### What
-
-In order to keep the immutablity of a docker image, the configuration must live outside the container image, 
-K8 config maps enable this. 
-
-### Why
-Secrets, env variables, and other environment specific items should not be baked into a container image.
-
+# Configmaps
 
 ### ![](/louk8cnc-intro-k8s/images/kubernetes/cm.png) 
 
 ---
 
+# Configmaps
 
-{{< highlight yaml "linenos=inline" >}}
+In order to keep the immutablity of a docker image, the configuration must live outside the container image, 
+K8 config maps enable this. 
+
+Secrets, env variables, and other environment specific items should not be baked into a container image.
+
+---
+
+# Configmaps
+
+Yaml 
+
+```yaml
 apiVersion: v1
 data:
   game.properties: |
@@ -38,13 +43,15 @@ kind: ConfigMap
 metadata:
   name: game-config
   namespace: default
-  
-{{< / highlight >}}
+```
 
 ---
 
+# Configmaps
 
-{{< highlight yaml "linenos=inline,hl_lines=13-15 18-20 ,linenostart=1" >}}
+Environment Vars
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -66,12 +73,15 @@ spec:
               name: special-config
               key: SPECIAL_TYPE
   restartPolicy: Never
-{{< / highlight >}}
+```
 
 ---
 
+# Configmaps
 
-{{< highlight yaml "linenos=inline,hl_lines=8-10 14-16 ,linenostart=1" >}}
+Files from Volume mounts
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -89,5 +99,5 @@ spec:
       configMap:
         name: special-config
   restartPolicy: Never
-{{< / highlight >}}
+```
 

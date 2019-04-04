@@ -159,24 +159,25 @@
 <h1 id="in-the-beginning">In the beginning</h1>
 
 <p><img src="/louk8cnc-intro-k8s/images/docker/app2.png" alt="" /></p>
+
 </section><section>
 
 <h1 id="the-hypervisor">The Hypervisor</h1>
 
 <p><img src="/louk8cnc-intro-k8s/images/docker/vm.png" alt="" /></p>
+
 </section><section>
 
-<h1 id="containers">Containers</h1>
+<h1 id="2007">2007</h1>
 
-<p><img src="/louk8cnc-intro-k8s/images/docker/containers.png" alt="" /></p>
+<h3 id="container-primitives">Container Primitives</h3>
+
+<ul>
+<li>Control Groups</li>
+<li>Namespaces</li>
+</ul>
+
 </section><section>
-
-<h1 id="container-layers">Container Layers</h1>
-
-<p><img src="/louk8cnc-intro-k8s/images/docker/layer.png" alt="" /></p>
-</section><section>
-
-<h1 id="container-primitives">Container Primitives</h1>
 
 <h4 id="control-groups">Control Groups</h4>
 
@@ -203,12 +204,76 @@
 <li>interprocess communication</li>
 <li>filesystems</li>
 </ul>
+
 </section><section>
 
-<h1 id="docker">Docker</h1>
+<h1 id="containers">Containers</h1>
+
+<p><img src="/louk8cnc-intro-k8s/images/docker/containers.png" alt="" /></p>
+
 </section><section>
 
-<h1 id="docker-benefits">Docker Benefits</h1>
+<h1 id="rise-of-the-containers-runtimes">Rise of the Containers (runtimes)</h1>
+
+<ul>
+<li>lxc</li>
+<li>Docker ( containerd )</li>
+<li>rkt</li>
+<li>runc</li>
+<li>lmctfy</li>
+<li>cri-o</li>
+</ul>
+
+</section><section>
+
+<p><img src="/louk8cnc-intro-k8s/images/container_fail.png" alt="" /></p>
+
+</section><section>
+
+<h1 id="the-orchestrator">The orchestrator</h1>
+
+</section><section>
+
+<h1 id="2010">2010</h1>
+
+<p>Mesosphere</p>
+
+</section><section>
+
+<h1 id="2013">2013</h1>
+
+<p>Docker Released</p>
+
+<p>.1 release of Docker Compose</p>
+
+</section><section>
+
+<h1 id="2014">2014</h1>
+
+<p><strong>Kubernetes</strong> released</p>
+
+<p>Rancher Release 1.0 supports Docker Swarm, Meso and Kubernetes  Docker container runtime</p>
+
+</section><section>
+
+<h1 id="2016">2016</h1>
+
+<p>Mesophere supports Docker, rkt, and appc for container runtimes</p>
+
+</section><section>
+
+<h1 id="2017">2017</h1>
+
+<p>Mesophere add supports for Kubernetes</p>
+
+</section><section>
+
+<h1 id="2018">2018</h1>
+
+<p>Docker EE 2.0 has support for the Kubernetes orchestrator</p>
+</section><section>
+
+<h1 id="containers-benefits">Containers Benefits</h1>
 
 <ul>
 <li>Separation of concerns</li>
@@ -219,12 +284,10 @@
 <li>Build in one environment, ship to another</li>
 <li>Scalability</li>
 <li>Easily spin up new containers if needed</li>
-<li>Run more apps on one host machine</li>
 </ul>
-</section><section><p><img src="/louk8cnc-intro-k8s/images/docker/platform.png" alt="" /></p>
 </section><section>
 
-<h1 id="dockerfile-https-github-com-shahadarsh-docker-k8s-workshop-blob-master-exercises-docker-conference-details-service-dockerfile"><a href="https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile">Dockerfile</a></h1>
+<h3 id="dockerfile-https-github-com-shahadarsh-docker-k8s-workshop-blob-master-exercises-docker-conference-details-service-dockerfile"><a href="https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile">Dockerfile</a></h3>
 
 <ul>
 <li>Instructions specify what to do when building the image</li>
@@ -233,6 +296,13 @@
 <li>Comments start with “#”</li>
 <li>Remember, each line in a Dockerfile creates a new layer if it changes the state of the image</li>
 <li>You need to find the right balance between having lots of layers created for the image and readability of the Dockerfile</li>
+</ul>
+
+</section><section>
+
+<h3 id="dockerfile-https-github-com-shahadarsh-docker-k8s-workshop-blob-master-exercises-docker-conference-details-service-dockerfile-1"><a href="https://github.com/shahadarsh/docker-k8s-workshop/blob/master/exercises/docker/conference-details-service/Dockerfile">Dockerfile</a></h3>
+
+<ul>
 <li>Don’t install unnecessary packages</li>
 <li>One ENTRYPOINT per Dockerfile</li>
 <li>Combine similar commands into one by using “&amp;&amp;” and “\”<br /></li>
@@ -240,20 +310,6 @@
 <li>The order of statements is important</li>
 <li>Add files that are least likely to change first and the ones most likely to change last</li>
 </ul>
-</section><section>
-
-<h1 id="docker-cli">Docker cli</h1>
-
-<ul>
-<li>docker ps</li>
-<li>docker images</li>
-<li>docker logs</li>
-<li>docker exec</li>
-</ul>
-
-<p><a href="https://docs.docker.com/engine/reference/commandline/cli/">Official Documentation</a></p>
-
-<p><a href="https://www.katacoda.com/contino/courses/docker/basics">More exercises</a></p>
 </section><section>
 
 <h1 id="kubernetes">Kubernetes</h1>
@@ -265,15 +321,20 @@
 
 </section><section>
 
+<h3 id="kubernetes-history-1">Kubernetes History</h3>
+
 <ul>
 <li>Kubernetes is heavily influenced by Google’s Borg system</li>
-<li>Released in 2015 when Google partnered with Linux foundation to form CNCF</li>
+<li>Released in 2014 when Google partnered with Linux foundation to form CNCF</li>
 <li>Often called K8s which is a Numeronym</li>
 <li>K[ubernete]s →  K[8]s → K8s</li>
 <li>Kubernetes - Greek for helmsman or pilot</li>
+<li>Kubernetes v1.0 was released on July 21, 2015</li>
 </ul>
 
 </section><section>
+
+<h3 id="kubernetes-history-2">Kubernetes History</h3>
 
 <p>“Kubernetes was built to radically change the way that applications are built and deployed in the cloud. Fundamentally, it was designed to give developers more velocity, efficiency, and agility”</p>
 
@@ -287,26 +348,30 @@
 
 </section><section>
 
+<h1 id="cncf-landscape-1">CNCF Landscape</h1>
+
 <p><img src="/louk8cnc-intro-k8s/images/incubating.png" alt="" /></p>
 
 </section><section>
+
+<h1 id="cncf-landscape-2">CNCF Landscape</h1>
 
 <p><img src="/louk8cnc-intro-k8s/images/graduated.png" alt="" /></p>
 
 </section><section>
 
-<h1 id="involvement">Involvement</h1>
+<h1 id="cncf-involvement">CNCF Involvement</h1>
 
 <ul>
-<li><p>Sigs <a href="https://github.com/kubernetes/community/blob/master/sig-list.md">https://github.com/kubernetes/community/blob/master/sig-list.md</a></p></li>
+<li><p><a href="https://github.com/kubernetes/community/blob/master/sig-list.md">SIGS</a></p></li>
 
-<li><p>Stackoverflow <a href="https://stackoverflow.com/questions/tagged/kubernetes">https://stackoverflow.com/questions/tagged/kubernetes</a></p></li>
+<li><p><a href="https://stackoverflow.com/questions/tagged/kubernetes">Stackoverflow</a></p></li>
 
 <li><p>Slack</p>
 
 <ul>
-<li>k8 <a href="http://slack.k8s.io/">http://slack.k8s.io/</a></li>
-<li>CNCF <a href="https://slack.cncf.io/">https://slack.cncf.io/</a></li>
+<li><a href="http://slack.k8s.io/">K8</a></li>
+<li><a href="https://slack.cncf.io/">CNCF</a></li>
 </ul></li>
 </ul>
 </section><section>
@@ -318,10 +383,6 @@
 </section><section>
 
 <h3 id="master-node">Master Node</h3>
-
-</section><section>
-
-<p><img src="/images/arch//master.png" alt="Master" /></p>
 
 </section><section>
 
@@ -347,11 +408,11 @@
 
 </section><section>
 
-<h3 id="worker-node">Worker Node</h3>
+<p><img src="/louk8cnc-intro-k8s/images/arch/master.png" alt="" /></p>
 
 </section><section>
 
-<p><img src="/louk8cnc-intro-k8s/images/arch//node.png" alt="" /></p>
+<h3 id="worker-node">Worker Node</h3>
 
 </section><section>
 
@@ -368,7 +429,6 @@
 
 <ul>
 <li>docker</li>
-<li>containerd</li>
 </ul></li>
 
 <li><p>Pod:</p>
@@ -383,6 +443,10 @@
 <li>Used to reach services and allow communication between Nodes.</li>
 </ul></li>
 </ol>
+
+</section><section>
+
+<p><img src="/louk8cnc-intro-k8s/images/arch//node.png" alt="" /></p>
 
 </section><section>
 
@@ -410,7 +474,7 @@ Initially, Kubernetes was built on top of Docker as the container runtime. Soon 
 <p><img src="/louk8cnc-intro-k8s/images/arch/flow.png" alt="" /></p>
 </section><section>
 
-<h1 id="kubernetes-api-objects">Kubernetes API Objects</h1>
+<h2 id="kubernetes-api-objects">Kubernetes API Objects</h2>
 
 <ol>
 <li><a href="/kubernetes/objects/namespaces">Namespaces</a></li>
@@ -444,6 +508,12 @@ Initially, Kubernetes was built on top of Docker as the container runtime. Soon 
 </section><section>
 
 <h3 id="pods">Pods</h3>
+
+<h3 id="louk8cnc-intro-k8s-images-kubernetes-pod-png"><img src="/louk8cnc-intro-k8s/images/kubernetes/pod.png" alt="" /></h3>
+
+</section><section>
+
+<h3 id="pods-1">Pods</h3>
 
 <ul>
 <li><p>Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.</p></li>
@@ -866,83 +936,99 @@ spec:
 </code></pre>
 </section><section>
 
-<h3 id="what">What</h3>
-
-<p>In order to keep the immutablity of a docker image, the configuration must live outside the container image,
-K8 config maps enable this.</p>
-
-<h3 id="why">Why</h3>
-
-<p>Secrets, env variables, and other environment specific items should not be baked into a container image.</p>
+<h1 id="configmaps">Configmaps</h1>
 
 <h3 id="louk8cnc-intro-k8s-images-kubernetes-cm-png"><img src="/louk8cnc-intro-k8s/images/kubernetes/cm.png" alt="" /></h3>
 
 </section><section>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>apiVersion: v1
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>data:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>  game.properties: <span style="color:#e6db74">|
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#e6db74">    enemies=aliens</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>    lives=<span style="color:#ae81ff">3</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>    enemies.cheat=<span style="color:#66d9ef">true</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    enemies.cheat.level=noGoodRotten
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>    secret.code.passphrase=UUDDLRLRBABAS
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>    secret.code.allowed=<span style="color:#66d9ef">true</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>    secret.code.lives=<span style="color:#ae81ff">30</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>  ui.properties: <span style="color:#e6db74">|
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">    color.good=purple</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>    color.bad=yellow
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>    allow.textmode=<span style="color:#66d9ef">true</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>    how.nice.to.look=fairlyNice
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>kind: ConfigMap
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>metadata:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>  name: game-config
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>  namespace: default
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>  </code></pre></div>
+<h1 id="configmaps-1">Configmaps</h1>
+
+<p>In order to keep the immutablity of a docker image, the configuration must live outside the container image,
+K8 config maps enable this.</p>
+
+<p>Secrets, env variables, and other environment specific items should not be baked into a container image.</p>
 
 </section><section>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>apiVersion: v1
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>kind: Pod
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>metadata:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>  name: dapi-test-pod
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>spec:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>  containers:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    - name: test-container
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>      image: k8s.gcr.io/busybox
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>      command: [ <span style="color:#e6db74">&#34;/bin/sh&#34;</span>, <span style="color:#e6db74">&#34;-c&#34;</span>, <span style="color:#e6db74">&#34;echo $(SPECIAL_LEVEL_KEY) $(SPECIAL_TYPE_KEY)&#34;</span> ]
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>      env:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>        - name: SPECIAL_LEVEL_KEY
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>          valueFrom:
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>            configMapKeyRef:
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>              name: special-config
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>              key: SPECIAL_LEVEL
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>        - name: SPECIAL_TYPE_KEY
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>          valueFrom:
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>            configMapKeyRef:
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>              name: special-config
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span>              key: SPECIAL_TYPE
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span>  restartPolicy: Never</code></pre></div>
+<h1 id="configmaps-2">Configmaps</h1>
+
+<p>Yaml</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+data:
+  game.properties: |
+    enemies=aliens
+    lives=3
+    enemies.cheat=true
+    enemies.cheat.level=noGoodRotten
+    secret.code.passphrase=UUDDLRLRBABAS
+    secret.code.allowed=true
+    secret.code.lives=30
+  ui.properties: |
+    color.good=purple
+    color.bad=yellow
+    allow.textmode=true
+    how.nice.to.look=fairlyNice
+kind: ConfigMap
+metadata:
+  name: game-config
+  namespace: default
+</code></pre>
 
 </section><section>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>apiVersion: v1
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>kind: Pod
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>metadata:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>  name: dapi-test-pod
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>spec:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>  containers:
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    - name: test-container
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>      image: k8s.gcr.io/busybox
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>      command: [ <span style="color:#e6db74">&#34;/bin/sh&#34;</span>, <span style="color:#e6db74">&#34;-c&#34;</span>, <span style="color:#e6db74">&#34;ls /etc/config/&#34;</span> ]
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>      volumeMounts:
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>      - name: config-volume
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span>        mountPath: /etc/config
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>  volumes:
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>    - name: config-volume
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>      configMap:
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>        name: special-config
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>  restartPolicy: Never</code></pre></div>
+<h1 id="configmaps-3">Configmaps</h1>
+
+<p>Environment Vars</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+kind: Pod
+metadata:
+  name: dapi-test-pod
+spec:
+  containers:
+    - name: test-container
+      image: k8s.gcr.io/busybox
+      command: [ &quot;/bin/sh&quot;, &quot;-c&quot;, &quot;echo $(SPECIAL_LEVEL_KEY) $(SPECIAL_TYPE_KEY)&quot; ]
+      env:
+        - name: SPECIAL_LEVEL_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: special-config
+              key: SPECIAL_LEVEL
+        - name: SPECIAL_TYPE_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: special-config
+              key: SPECIAL_TYPE
+  restartPolicy: Never
+</code></pre>
+
+</section><section>
+
+<h1 id="configmaps-4">Configmaps</h1>
+
+<p>Files from Volume mounts</p>
+
+<pre><code class="language-yaml">apiVersion: v1
+kind: Pod
+metadata:
+  name: dapi-test-pod
+spec:
+  containers:
+    - name: test-container
+      image: k8s.gcr.io/busybox
+      command: [ &quot;/bin/sh&quot;, &quot;-c&quot;, &quot;ls /etc/config/&quot; ]
+      volumeMounts:
+      - name: config-volume
+        mountPath: /etc/config
+  volumes:
+    - name: config-volume
+      configMap:
+        name: special-config
+  restartPolicy: Never
+</code></pre>
 </section><section>
 
 <h1 id="ingress">Ingress</h1>
@@ -959,11 +1045,18 @@ K8 config maps enable this.</p>
 
 </section><section>
 
-<h4 id="ingress-controllers">Ingress controllers</h4>
+<h2 id="ingress-controllers">Ingress Controllers</h2>
 
-<p>In order for the ingress resource to work, the cluster must have an ingress controller running. This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and are typically started automatically with a cluster. Choose the ingress controller implementation that best fits your cluster.</p>
+<ul>
+<li>In order for the ingress resource to work, the cluster must have an ingress controller running.</li>
+<li>This is unlike other types of controllers, which run as part of the kube-controller-manager binary, and
+are typically started automatically with a cluster.</li>
+<li>Choose the ingress controller implementation that best fits your cluster.</li>
+</ul>
 
-<p>Ingress Controller</p>
+</section><section>
+
+<h2 id="ingress-controller">Ingress Controller</h2>
 
 <pre><code class="language-yaml">apiVersion: extensions/v1beta1
 kind: Ingress
@@ -977,7 +1070,7 @@ spec:
 
 </section><section>
 
-<h4 id="ingress-controllers-1">Ingress controllers</h4>
+<h2 id="ingress-controllers-1">Ingress controllers</h2>
 
 <p>Kubernetes supported Ingress Controllers:</p>
 
@@ -998,7 +1091,7 @@ spec:
 
 </section><section>
 
-<h4 id="ingress-rules">Ingress Rules</h4>
+<h2 id="ingress-rules">Ingress Rules</h2>
 
 <p>Each http rule contains the following information:</p>
 
@@ -1008,7 +1101,9 @@ spec:
 <li>Backend service</li>
 </ul>
 
-<p>Ingress Rule</p>
+</section><section>
+
+<h2 id="ingress-rule">Ingress Rule</h2>
 
 <pre><code class="language-yaml">apiVersion: extensions/v1beta1
 kind: Ingress
@@ -1150,6 +1245,10 @@ and serve as the IP address inside the cluster for an application running multip
 
 <p>Liveliness checks inform the kubelet that the pod is running. If this check fails the kubelet will attempt to restart the pod.</p>
 
+</section><section>
+
+<h2 id="liveliness-1">Liveliness</h2>
+
 <pre><code class="language-yaml">apiVersion: v1
 kind: Pod
 metadata:
@@ -1180,6 +1279,10 @@ spec:
 <h2 id="readiness">Readiness</h2>
 
 <p>Readiness checks let the kubelet know that the pod is ready to receive traffic. For example if this check fails the Service or Load balancer does send traffic to that pod.</p>
+
+</section><section>
+
+<h2 id="readiness-1">Readiness</h2>
 
 <pre><code class="language-yaml">readinessProbe:
     exec:
