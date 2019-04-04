@@ -6,7 +6,7 @@ weight = 450
 
 # Storage 
 
-![](/images/kubernetes/pv.png) 
+![](/louk8cnc-intro-k8s/images/kubernetes/pv.png) 
 
 ---
 

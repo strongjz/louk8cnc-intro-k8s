@@ -7,4 +7,4 @@ weight = 104
 
 # Container Layers
 
-![](/images/docker/layer.png)
+![](/louk8cnc-intro-k8s/images/docker/layer.png)

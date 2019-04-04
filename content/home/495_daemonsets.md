@@ -6,7 +6,7 @@ weight = 495
 
 ### Daemonsets
 
-### ![](/images/kubernetes/ds.png) 
+### ![](/louk8cnc-intro-k8s/images/kubernetes/ds.png) 
 
 ---
 
