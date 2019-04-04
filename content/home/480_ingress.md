@@ -7,7 +7,7 @@ weight = 480
 
 # Ingress
 
-### ![](/louk8cnc-intro-k8s/images/kubernetes/ing.png) 
+### ![](/images/kubernetes/ing.png) 
 
 ---
 

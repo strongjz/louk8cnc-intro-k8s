@@ -7,55 +7,55 @@ weight = 25
 
 ---
 
-### [Introduction](/louk8cnc-intro-k8s/introduction/index.html)
+### [Introduction](/introduction/index.html)
 
-   * [Presenter](/louk8cnc-intro-k8s/introduction/whoami/)
-   * [Contino](/louk8cnc-intro-k8s/introduction/contino/)
-   * [Agenda](/louk8cnc-intro-k8s/introduction/agenda/)
+   * [Presenter](/introduction/whoami/)
+   * [Contino](/introduction/contino/)
+   * [Agenda](/introduction/agenda/)
 
 ---
 
-### [Containers](/louk8cnc-intro-k8s/containers)
+### [Containers](/containers)
     
-   * [Intro](/louk8cnc-intro-k8s/containers/intro)
-   * [History](/louk8cnc-intro-k8s/containers/history)
-   * [Primitives](/louk8cnc-intro-k8s/containers/primitives)
-   * [Docker](/louk8cnc-intro-k8s/containers/docker)
-   * [Network](/louk8cnc-intro-k8s/containers/network)
-   * [Storage](/louk8cnc-intro-k8s/containers/storage)
+   * [Intro](/containers/intro)
+   * [History](/containers/history)
+   * [Primitives](/containers/primitives)
+   * [Docker](/containers/docker)
+   * [Network](/containers/network)
+   * [Storage](/containers/storage)
     
 ---
 
-### [Kubernetes](/louk8cnc-intro-k8s/kubernetes/)
+### [Kubernetes](/kubernetes/)
 
-* [History](/louk8cnc-intro-k8s/kubernetes/history)
-* [Community](/louk8cnc-intro-k8s/kubernetes/community)
-* [CNCF Graduated Projects](/louk8cnc-intro-k8s/kubernetes/community/projects_grad)
-* [CNCF Incubating Projects](/louk8cnc-intro-k8s/kubernetes/community/projects_inc)        
-* [Get Involved](/louk8cnc-intro-k8s/kubernetes/community/involvement)
-
----
-
-### [Kubernetes Objects](/louk8cnc-intro-k8s/kubernetes/objects)
-
-* [Namespaces](/louk8cnc-intro-k8s/kubernetes/objects/namespaces)
-* [Pods](/louk8cnc-intro-k8s/kubernetes/objects/pods)
-* [Resource Quotas](/louk8cnc-intro-k8s/kubernetes/objects/resource-quotas)
-* [Controllers](/louk8cnc-intro-k8s/kubernetes/objects/controllers)
-* [Storage](/louk8cnc-intro-k8s/kubernetes/objects/storage)
-* [Secrets](/louk8cnc-intro-k8s/kubernetes/objects/secrets)
-* [ConfigMaps](/louk8cnc-intro-k8s/kubernetes/objects/configmaps)
-* [Ingress](/louk8cnc-intro-k8s/kubernetes/objects/ingress)
-* [Service](/louk8cnc-intro-k8s/kubernetes/objects/services)
-* [Healthchecks](/louk8cnc-intro-k8s/kubernetes/objects/healthchecks)
+* [History](/kubernetes/history)
+* [Community](/kubernetes/community)
+* [CNCF Graduated Projects](/kubernetes/community/projects_grad)
+* [CNCF Incubating Projects](/kubernetes/community/projects_inc)        
+* [Get Involved](/kubernetes/community/involvement)
 
 ---
 
-### [Extras](/louk8cnc-intro-k8s/kubernetes/extras)
+### [Kubernetes Objects](/kubernetes/objects)
 
-* [Options for Running Kubernetes](/louk8cnc-intro-k8s/kubernetes/running)
-* [Monitoring](/louk8cnc-intro-k8s/kubernetes/extras/monitoring)
-* [Security](/louk8cnc-intro-k8s/kubernetes/extras/security)
+* [Namespaces](/kubernetes/objects/namespaces)
+* [Pods](/kubernetes/objects/pods)
+* [Resource Quotas](/kubernetes/objects/resource-quotas)
+* [Controllers](/kubernetes/objects/controllers)
+* [Storage](/kubernetes/objects/storage)
+* [Secrets](/kubernetes/objects/secrets)
+* [ConfigMaps](/kubernetes/objects/configmaps)
+* [Ingress](/kubernetes/objects/ingress)
+* [Service](/kubernetes/objects/services)
+* [Healthchecks](/kubernetes/objects/healthchecks)
+
+---
+
+### [Extras](/kubernetes/extras)
+
+* [Options for Running Kubernetes](/kubernetes/running)
+* [Monitoring](/kubernetes/extras/monitoring)
+* [Security](/kubernetes/extras/security)
 
 
 

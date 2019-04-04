@@ -13,7 +13,7 @@ K8 config maps enable this.
 Secrets, env variables, and other environment specific items should not be baked into a container image.
 
 
-### ![](/louk8cnc-intro-k8s/images/kubernetes/cm.png) 
+### ![](/images/kubernetes/cm.png) 
 
 ---
 

@@ -1,7 +1,7 @@
 publishDir = "docs/"
 baseURL = "/"
-languageCode = "en-us"
 title = "Introduction to Kubernetes"
+
 theme = "reveal-hugo"
 
 [outputFormats.Reveal]
@@ -9,12 +9,9 @@ baseName = "index"
 mediaType = "text/html"
 isHTML = true
 
-[params.reveal_hugo]
-history = true
+[reveal_hugo]
+theme = "night"
+margin = 0.2
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
 
-[params]
-  themeVariant = "mine"
 

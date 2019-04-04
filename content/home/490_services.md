@@ -7,7 +7,7 @@ weight = 490
 # Services
 
 
-### ![](/louk8cnc-intro-k8s/images/kubernetes/service.png) 
+### ![](/images/kubernetes/service.png) 
 
 ---
 
@@ -25,7 +25,7 @@ More info [here](https://kubernetes.io/docs/concepts/services-networking/service
 
 # Service
 
-### ![](/louk8cnc-intro-k8s/images/kubernetes/application-service.png) 
+### ![](/images/kubernetes/application-service.png) 
 
 ---
 

@@ -15,7 +15,7 @@ weight = 420
 
 ### [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/)
 
-![](/louk8cnc-intro-k8s/images/pods.png)
+![](/images/pods.png)
 
 
 ---

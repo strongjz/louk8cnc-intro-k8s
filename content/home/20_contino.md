@@ -6,4 +6,4 @@ weight = 20
 
 # Contino
 
-![](/louk8cnc-intro-k8s/images/contino/whois.png)
+![](/images/contino/whois.png)

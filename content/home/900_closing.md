@@ -7,7 +7,7 @@ weight = 900
 # Closing remarks
 
 
-![](/louk8cnc-intro-k8s/images/partyparrot.gif )
+![](/images/partyparrot.gif )
 
 Contact Me:
 

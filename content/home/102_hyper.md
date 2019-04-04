@@ -6,5 +6,5 @@ weight = 102
 
 # The Hypervisor
 
-![](/louk8cnc-intro-k8s/images/docker/vm.png)
+![](/images/docker/vm.png)
 

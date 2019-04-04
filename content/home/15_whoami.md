@@ -7,7 +7,7 @@ weight = 15
 
 James Strong  
 
-![](/louk8cnc-intro-k8s/images/james.png)
+![](/images/james.png)
 
 Technical Principal @ [Contino](https://contino.io)
 

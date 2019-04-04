@@ -41,10 +41,10 @@ $ kubectl logs counter
 
 # Node Level
 
-![](/louk8cnc-intro-k8s/images/kubernetes/logging-with-node-agent.png)
+![](/images/kubernetes/logging-with-node-agent.png)
  
 ---
 
 # Side Car
 
-![](/louk8cnc-intro-k8s/images/kubernetes/logging-with-streaming-sidecar.png)
+![](/images/kubernetes/logging-with-streaming-sidecar.png)
