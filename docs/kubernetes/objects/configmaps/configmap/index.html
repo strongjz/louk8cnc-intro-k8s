@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.54.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Configmaps :: Introduction to Kubernetes</title>
 
     
-    <link href="/louk8cnc-intro-k8s/css/nucleus.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/fontawesome-all.min.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/hybrid.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/featherlight.min.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/perfect-scrollbar.min.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/auto-complete.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/theme.css?1554066352" rel="stylesheet">
-    <link href="/louk8cnc-intro-k8s/css/hugo-theme.css?1554066352" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/nucleus.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/fontawesome-all.min.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/hybrid.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/featherlight.min.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/perfect-scrollbar.min.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/auto-complete.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/theme.css?1554349984" rel="stylesheet">
+    <link href="/louk8cnc-intro-k8s/css/hugo-theme.css?1554349984" rel="stylesheet">
     
-      <link href="/louk8cnc-intro-k8s/css/theme-mine.css?1554066352" rel="stylesheet">
+      <link href="/louk8cnc-intro-k8s/css/theme-mine.css?1554349984" rel="stylesheet">
     
 
-    <script src="/louk8cnc-intro-k8s/js/jquery-2.x.min.js?1554066352"></script>
+    <script src="/louk8cnc-intro-k8s/js/jquery-2.x.min.js?1554349984"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/louk8cnc-intro-k8s/js/lunr.min.js?1554066352"></script>
-<script type="text/javascript" src="/louk8cnc-intro-k8s/js/auto-complete.js?1554066352"></script>
+<script type="text/javascript" src="/louk8cnc-intro-k8s/js/lunr.min.js?1554349984"></script>
+<script type="text/javascript" src="/louk8cnc-intro-k8s/js/auto-complete.js?1554349984"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/strongjz.github.io\/louk8cnc-intro-k8s";
     
 </script>
-<script type="text/javascript" src="/louk8cnc-intro-k8s/js/search.js?1554066352"></script>
+<script type="text/javascript" src="/louk8cnc-intro-k8s/js/search.js?1554349984"></script>
 
     
   </div>
@@ -1799,18 +1799,18 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>apiVersion: v1
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>data:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>  game.properties: <span style="color:#e6db74">|
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#e6db74">    enemies=aliens
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#e6db74">    lives=3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#e6db74">    enemies.cheat=true
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#e6db74">    enemies.cheat.level=noGoodRotten
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">    secret.code.passphrase=UUDDLRLRBABAS
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">    secret.code.allowed=true
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">    secret.code.lives=30</span>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#e6db74">    enemies=aliens</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>    lives=<span style="color:#ae81ff">3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>    enemies.cheat=<span style="color:#66d9ef">true</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    enemies.cheat.level=noGoodRotten
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>    secret.code.passphrase=UUDDLRLRBABAS
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>    secret.code.allowed=<span style="color:#66d9ef">true</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>    secret.code.lives=<span style="color:#ae81ff">30</span>
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>  ui.properties: <span style="color:#e6db74">|
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">    color.good=purple
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">    color.bad=yellow
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#e6db74">    allow.textmode=true
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span><span style="color:#e6db74">    how.nice.to.look=fairlyNice</span>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">    color.good=purple</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>    color.bad=yellow
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span>    allow.textmode=<span style="color:#66d9ef">true</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>    how.nice.to.look=fairlyNice
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>kind: ConfigMap
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>metadata:
 <span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>  name: game-config
@@ -2999,20 +2999,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/louk8cnc-intro-k8s/js/clipboard.min.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/perfect-scrollbar.min.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/perfect-scrollbar.jquery.min.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/jquery.sticky.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/featherlight.min.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/html5shiv-printshiv.min.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/highlight.pack.js?1554066352"></script>
+    <script src="/louk8cnc-intro-k8s/js/clipboard.min.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/perfect-scrollbar.min.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/perfect-scrollbar.jquery.min.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/jquery.sticky.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/featherlight.min.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/html5shiv-printshiv.min.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/highlight.pack.js?1554349984"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/louk8cnc-intro-k8s/js/modernizr.custom.71422.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/learn.js?1554066352"></script>
-    <script src="/louk8cnc-intro-k8s/js/hugo-learn.js?1554066352"></script>
+    <script src="/louk8cnc-intro-k8s/js/modernizr.custom.71422.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/learn.js?1554349984"></script>
+    <script src="/louk8cnc-intro-k8s/js/hugo-learn.js?1554349984"></script>
 
-    <link href="/louk8cnc-intro-k8s/mermaid/mermaid.css?1554066352" type="text/css" rel="stylesheet" />
-    <script src="/louk8cnc-intro-k8s/mermaid/mermaid.js?1554066352"></script>
+    <link href="/louk8cnc-intro-k8s/mermaid/mermaid.css?1554349984" type="text/css" rel="stylesheet" />
+    <script src="/louk8cnc-intro-k8s/mermaid/mermaid.js?1554349984"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
