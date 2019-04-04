@@ -5,7 +5,7 @@ weight = 700
 
 +++
 
-### Options for Running Kubernetes
+### Running Kubernetes
 
 * GKP
 * EKS

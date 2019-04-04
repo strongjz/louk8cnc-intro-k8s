@@ -5,16 +5,20 @@ weight = 420
 
 +++
 
+### Pods 
+
+* Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.
+
+* A pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers
+
+----
+
 ### [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/)
-
-Pods are a collection of containers that share a namespace, are colocated and scheduled together on Kubenetes nodes.
-
-A pod is a group of one or more containers, with shared storage/network, and a specification for how to run the containers
 
 ![](/louk8cnc-intro-k8s/images/pods.png)
 
----
 
+---
 
 ### Labels
 

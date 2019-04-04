@@ -6,7 +6,7 @@ pre = "<b>1. </b>"
 +++
 
 ---
-1. [Instructors](/louk8cnc-intro-k8s/introduction/whoami/)
+1. [Instructors](/louk8cnc-intro-k8s/whoami/)
 2. [Contino](/louk8cnc-intro-k8s/introduction/contino/)
 3. [Agenda](/louk8cnc-intro-k8s/introduction/agenda/)
 

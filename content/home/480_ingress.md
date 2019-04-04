@@ -5,16 +5,17 @@ weight = 480
 
 +++
 
-#### What
+# Ingress
+
+### ![](/louk8cnc-intro-k8s/images/kubernetes/ing.png) 
+
+---
+
+# Ingress
 
 Ingress is a K8 object that allows external access to resources inside the cluster
  
-#### Why
-
 Services, Pods and other objects are only accessible inside the cluster
-
-
-### ![](/louk8cnc-intro-k8s/images/kubernetes/ing.png) 
 
 ---
 
@@ -36,6 +37,10 @@ spec:
     servicePort: 80
 ```
 
+---
+
+#### Ingress controllers
+
 Kubernetes supported Ingress Controllers: 
 
 * [GCE](https://git.k8s.io/ingress-gce/README.md)
@@ -50,6 +55,8 @@ Others that can be deployed:
 Full list is [here](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 ---
+
+#### Ingress Rules
 
 Each http rule contains the following information:
 

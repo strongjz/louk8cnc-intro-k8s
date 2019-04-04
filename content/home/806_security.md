@@ -7,11 +7,12 @@ weight = 806
 ### Container security primitives
 * SElinux 
 * AppArmor
-* Seccomp https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile
+* [Seccomp](https://docs.docker.com/engine/security/seccomp/#run-without-the-default-seccomp-profile)
 
 ---
 
 ### Container Pipeline
+
 * Establish a pipeline to build a standard image
 * Have a versioning policy
 * Allow to only run images based of the standard image
@@ -37,7 +38,7 @@ weight = 806
 
 ---
 
-### Vendors to add
+### Security Vendors
 * Aquasec https://www.aquasec.com/
 * Twistlock https://www.twistlock.com/
 * Sysdig Falco https://www.sysdig.org/falco/

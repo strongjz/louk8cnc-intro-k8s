@@ -4,7 +4,13 @@ date = 2018-12-09T17:00:31-05:00
 weight = 450
 +++
 
-### What
+# Storage 
+
+![](/louk8cnc-intro-k8s/images/kubernetes/pv.png) 
+
+---
+
+# Storage 
 
 Storage like compute is another resource that must be managed. Kubernetes offers 3 types of storage 
 
@@ -12,13 +18,8 @@ Storage like compute is another resource that must be managed. Kubernetes offers
 * Persistent Volumes
 * Persistent Volume Claims
 
-### Why
-
 The Ephemeral nature of pods and containers lead to the need for data to be have a decoupled lifecycle outside of
 containers and pods.
-
-### ![](/louk8cnc-intro-k8s/images/kubernetes/pv.png) 
-
 
 ---
 
@@ -46,7 +47,7 @@ volumeBindingMode: Immediate
 
 ---
 
----
+# Volume Types
 
 Several volume types are supported
 
@@ -56,6 +57,10 @@ Several volume types are supported
 * hostPath
 * secret
 * configmaps
+
+---
+
+# Volume Types Example
 
 awsElasticBlockStore example yaml: 
 
@@ -79,8 +84,6 @@ spec:
       fsType: ext4
 ```
 
-
-
 ---
 
 # Persistent Volumes
@@ -96,6 +99,10 @@ Types of PV's
 * AWSElasticBlockStore
 * AzureFile
 * CephFS
+
+---
+
+# Example
 
 ```yaml
 kind: PersistentVolume
@@ -129,6 +136,10 @@ Types of PVC's
 * AzureFile
 * CephFS
 
+---
+
+# Example
+
 ```yaml
 kind: Pod
 apiVersion: v1
@@ -147,13 +158,11 @@ spec:
         claimName: myclaim
  ```
  
- 
- 
 ---
 
 # Storage Demo
 
-Create the persistent and the claim
+Create a persistent volume and claim
 ```bash
 kubectl apply -f mysql-pv.yaml
 ```

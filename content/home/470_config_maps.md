@@ -89,5 +89,5 @@ spec:
       configMap:
         name: special-config
   restartPolicy: Never
-{{< / highlight >}
+{{< / highlight >}}
 

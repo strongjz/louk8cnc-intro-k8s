@@ -6,14 +6,17 @@ weight = 410
 
 ### [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
 
-### What
-
-Namespaces are virtual clusters inside your Kubernetes cluster that provide logically isolation (kinda) from each other.
-
-### Why
-
-Scope of names
-Organization of Kubernetes resources
-
 ### ![](/louk8cnc-intro-k8s/images/kubernetes/ns.png) 
+
+---
+
+### Namespaces
+
+* Namespaces are virtual clusters inside your Kubernetes cluster that provide logically isolation (kinda) from each other.
+
+* Scope of names
+
+* Organization of Kubernetes resources
+
+
 

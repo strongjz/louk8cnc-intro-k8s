@@ -1,8 +1,16 @@
 publishDir = "docs/"
-baseURL = "https://strongjz.github.io/louk8cnc-intro-k8s"
+baseURL = "/"
 languageCode = "en-us"
 title = "Introduction to Kubernetes"
-theme = "learn"
+theme = "reveal-hugo"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[params.reveal_hugo]
+history = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

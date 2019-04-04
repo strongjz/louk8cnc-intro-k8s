@@ -11,7 +11,15 @@ weight = 315
 
 ---
 
+### Master Node 
+
+---
+
 ![Master](/louk8cnc-intro-k8s/images/arch//master.png)
+
+---
+
+### Master Node 
 
 * API data store: Etcd (Cluster State)
 
@@ -27,7 +35,15 @@ weight = 315
 
 ---
 
+### Worker Node 
+
+---
+
 ![](/louk8cnc-intro-k8s/images/arch//node.png)
+
+---
+
+### Worker Node 
 
 1. Kubelet:
   * cAdvisor (metrics, logs...)
@@ -44,10 +60,8 @@ weight = 315
 
 ---
 
+### Data Flow
 
-## Data Flow
-
-![](/louk8cnc-intro-k8s/images/arch/flow.png)
 
 * CNI: Network Plugin in Kubelet that allows to talk to networking to get IPs for Pods and Services.
 
@@ -63,3 +77,8 @@ Initially, Kubernetes was built on top of Docker as the container runtime. Soon 
 * CRI consists of a protocol buffers and gRPC API, and libraries,
 
 
+---
+
+## Data Flow
+
+![](/louk8cnc-intro-k8s/images/arch/flow.png)
