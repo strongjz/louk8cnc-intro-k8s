@@ -1,6 +1,6 @@
 publishDir = "docs/"
 
-baseURL = "/"
+baseURL = "https://strongjz.github.io/louk8cnc-intro-k8s/"
 languageCode = "en-us"
 disableKinds = ["sitemap", "RSS"]
 

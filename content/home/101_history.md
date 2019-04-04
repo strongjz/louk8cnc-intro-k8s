@@ -10,4 +10,4 @@ weight = 101
 
 # In the beginning 
 
-![](/images/docker/app2.png)
+![](/louk8cnc-intro-k8s/images/docker/app2.png)

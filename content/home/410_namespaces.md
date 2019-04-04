@@ -6,7 +6,7 @@ weight = 410
 
 ### [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
 
-### ![](/images/kubernetes/ns.png) 
+### ![](/louk8cnc-intro-k8s/images/kubernetes/ns.png) 
 
 ---
 

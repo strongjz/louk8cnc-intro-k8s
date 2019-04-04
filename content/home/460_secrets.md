@@ -9,7 +9,7 @@ weight = 460
 
 # Secrets
 
-### ![](/images/kubernetes/secret.png) 
+### ![](/louk8cnc-intro-k8s/images/kubernetes/secret.png) 
 
 ---
 

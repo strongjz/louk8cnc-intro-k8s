@@ -6,7 +6,7 @@ weight = 801
 
 # Monitoring 
 
-![](/images/pro_dashboard.png)
+![](/louk8cnc-intro-k8s/images/pro_dashboard.png)
 
 ---
 

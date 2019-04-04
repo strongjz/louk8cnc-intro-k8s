@@ -7,7 +7,7 @@ weight = 315
 
 ## [High level Architecture](https://kubernetes.io/docs/concepts/architecture/)
 
-![](/images/arch/highlevel.png)
+![](/louk8cnc-intro-k8s/images/arch/highlevel.png)
 
 ---
 
@@ -39,7 +39,7 @@ weight = 315
 
 ---
 
-![](/images/arch//node.png)
+![](/louk8cnc-intro-k8s/images/arch//node.png)
 
 ---
 
@@ -81,4 +81,4 @@ Initially, Kubernetes was built on top of Docker as the container runtime. Soon 
 
 ## Data Flow
 
-![](/images/arch/flow.png)
+![](/louk8cnc-intro-k8s/images/arch/flow.png)

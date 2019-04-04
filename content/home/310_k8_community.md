@@ -6,17 +6,17 @@ weight = 310
 
 # CNCF Landscape
 
-![](/images/cncf-landscape.png)
+![](/louk8cnc-intro-k8s/images/cncf-landscape.png)
 
 ---
 
 
-![](/images/incubating.png)
+![](/louk8cnc-intro-k8s/images/incubating.png)
  
 
 ---
 
-![](/images/graduated.png)
+![](/louk8cnc-intro-k8s/images/graduated.png)
  
 
 ---
