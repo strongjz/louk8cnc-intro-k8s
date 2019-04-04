@@ -3,202 +3,202 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/</loc>
     <lastmod>2018-12-09T14:15:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/15_whoami/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/15_whoami/</loc>
     <lastmod>2018-12-09T14:25:28-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/20_contino/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/20_contino/</loc>
     <lastmod>2018-12-09T16:59:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/25_agenda/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/25_agenda/</loc>
     <lastmod>2018-12-09T16:59:28-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/101_history/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/101_history/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/102_hyper/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/102_hyper/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/103_containers/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/103_containers/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/104_layers/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/104_layers/</loc>
     <lastmod>2018-12-09T17:20:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/105_primitives/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/105_primitives/</loc>
     <lastmod>2018-12-09T17:21:13-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/200_docker/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/200_docker/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/201_benefits/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/201_benefits/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/202_platform/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/202_platform/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/203_dockerfile/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/203_dockerfile/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/205_cli/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/205_cli/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/300_kubernetes/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/300_kubernetes/</loc>
     <lastmod>2018-12-09T14:16:03-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/301_k8_history/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/301_k8_history/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/310_k8_community/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/310_k8_community/</loc>
     <lastmod>2018-12-09T17:00:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/315_k8_arch/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/315_k8_arch/</loc>
     <lastmod>2018-12-09T17:00:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/400_k8_objects/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/400_k8_objects/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/410_namespaces/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/410_namespaces/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/420_pods/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/420_pods/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/430_rq/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/430_rq/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/440_controllers/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/440_controllers/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/450_storage/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/450_storage/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/460_secrets/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/460_secrets/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/470_config_maps/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/470_config_maps/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/480_ingress/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/480_ingress/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/490_services/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/490_services/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/493_healthchecks/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/493_healthchecks/</loc>
     <lastmod>2018-12-09T17:00:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/495_daemonsets/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/495_daemonsets/</loc>
     <lastmod>2018-12-09T17:05:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/500_microservices/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/500_microservices/</loc>
     <lastmod>2018-12-09T17:21:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/700_running/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/700_running/</loc>
     <lastmod>2018-12-09T17:11:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/800_extras/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/800_extras/</loc>
     <lastmod>2018-12-09T17:13:35-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/801_monitoring/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/801_monitoring/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/802_logging/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/802_logging/</loc>
     <lastmod>2018-12-09T17:13:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/806_security/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/806_security/</loc>
     <lastmod>2018-12-09T17:13:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/900_closing/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/home/900_closing/</loc>
     <lastmod>2018-12-09T17:13:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://strongjz.github.io/louk8cnc-intro-k8s/tags/</loc>
     <priority>0</priority>
   </url>
   
